@@ -8,6 +8,11 @@ package cuerposgeométricos;
  *
  * @author ikerc
  */
-public class PrismaRegularCuadrangular {
+public class PrismaRegularCuadrangular extends PrismaRegular {
+
+    public PrismaRegularCuadrangular(double lado, Colores color, double altura) {
+        super(lado, color, altura);
+    }
+    
     
 }

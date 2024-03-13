@@ -5,11 +5,21 @@
 package cuerposgeométricos;
 
 
-public class CuerposGeométricos {
+public abstract class CuerposGeométricos {
 
     
     public static void main(String[] args) {
+        Menu menu= new Menu();
+        int opcion=menu.getOpcion();
+        switch(opcion){
+            case 1 -> crearObjeto();
+                case 2 ->
+                    case 3 ->
+                        case 4 ->
+                            case 0 ->
+        }
+    }
+    public static void crearObjeto(){
         
     }
-    
 }
