@@ -4,6 +4,7 @@
  */
 package cuerposgeométricos;
 
+import static cuerposgeométricos.CuerposGeométricos.sc;
 import java.util.Scanner;
 
 /**
@@ -11,7 +12,8 @@ import java.util.Scanner;
  * @author ikerc
  */
 public class Menu {
-     private int opcion;
+
+    private int opcion;
 
     public void mostrar() {
         System.out.println(" 1. Nuevo cuerpo geometrico");
@@ -19,6 +21,21 @@ public class Menu {
         System.out.println(" 3. Mostrar prismas");
         System.out.println(" 4. Mostrar circulares");
         System.out.println(" 0. FIN");
+    }
+
+    public int creacionPrismas() {
+        System.out.println("Que clase es el cuerpo geometrico");
+        System.out.println("Opcion 1 -> Prisma Regular Triangualr"
+                + "Opcion 2 -> Prisma Regular Cuadrangular"
+                + "Opcion 3 -> Circulo"
+                + "Opcion 4 -> Cuerpo Geometrico Circular"
+                + "Opcion 5 -> Cuerpo Geometrico Circular"
+                + "Opcion 6 -> Cilindro"
+                + "Opcion 7 -> Cilindro Recto"
+                + "Opcion 8 -> Cilindro Oblicuo"
+                + "Opcion 9 -> Cono"
+                + "Opcion 10 -> Tronco de Cono");
+        int opcion = sc.nextInt();
     }
 
     public int leer() {
@@ -38,5 +55,5 @@ public class Menu {
     public void setOpcion(int opcion) {
         this.opcion = opcion;
     }
-    
+
 }

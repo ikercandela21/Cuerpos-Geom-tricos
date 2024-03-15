@@ -20,4 +20,8 @@ public class PrismaRegularTriangular extends PrismaRegular {
         super(color, altura);
     }
 
+    public PrismaRegularTriangular(){
+        
+    }
+
 }

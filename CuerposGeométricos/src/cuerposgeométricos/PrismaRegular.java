@@ -22,6 +22,10 @@ public abstract class PrismaRegular extends CuerpoGeometrico {
     public PrismaRegular(Colores color, double altura) {
         super(color, altura);
     }
+    
+    public PrismaRegular(){
+        
+    }
 
     public double getLado() {
         return lado;
