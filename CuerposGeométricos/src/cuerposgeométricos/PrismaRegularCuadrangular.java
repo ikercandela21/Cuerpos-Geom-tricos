@@ -13,6 +13,9 @@ public class PrismaRegularCuadrangular extends PrismaRegular {
     public PrismaRegularCuadrangular(double lado, Colores color, double altura) {
         super(lado, color, altura);
     }
+
+    public PrismaRegularCuadrangular() {
+    }
     
     
 }

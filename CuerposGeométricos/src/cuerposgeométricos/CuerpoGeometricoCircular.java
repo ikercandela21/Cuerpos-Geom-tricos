@@ -21,6 +21,9 @@ public abstract class CuerpoGeometricoCircular extends CuerpoGeometrico {
     public CuerpoGeometricoCircular(Colores color, double altura) {
         super(color, altura);
     }
+
+    public CuerpoGeometricoCircular() {
+    }
     
     
 }

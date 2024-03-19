@@ -16,6 +16,9 @@ public class Circulo {
         this.radio = radio;
     }
 
+    public Circulo() {
+    }
+    
     public Circulo getRadio() {
         return radio;
     }

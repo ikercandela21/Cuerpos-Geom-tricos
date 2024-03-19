@@ -36,9 +36,9 @@ public abstract class CuerposGeométricos {
             case 1 ->
                 cg = new PrismaRegularTriangular();
             case 2 ->
-                cg = new PrismaRegularTriangular();
+                cg = new PrismaRegularCuadrangular();
             case 3 ->
-                
+                cg = new Circulo();
             case 4 ->
                 
             case 5 ->
