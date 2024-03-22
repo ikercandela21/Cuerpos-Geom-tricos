@@ -4,9 +4,10 @@
  */
 package cuerposgeométricos;
 
+import java.util.Objects;
 import java.util.Scanner;
 
-public class CuerpoGeometrico {
+public abstract class CuerpoGeometrico implements Comparable <CuerpoGeometrico>{
 
     private Colores color;
     private double altura;
@@ -47,4 +48,36 @@ public class CuerpoGeometrico {
 //        altura=this.setAltura(alturas);
         this.altura = sc.nextDouble();
     }
+
+    @Override
+    public int compareTo(CuerpoGeometrico o) {
+        return this.color.compareTo(o.getColor());
+    }
+
+    @Override
+    public int hashCode() {
+        int hash = 5;
+        hash = 79 * hash + Objects.hashCode(this.color);
+        hash = 79 * hash + (int) (Double.doubleToLongBits(this.altura) ^ (Double.doubleToLongBits(this.altura) >>> 32));
+        return hash;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final CuerpoGeometrico other = (CuerpoGeometrico) obj;
+        if (Double.doubleToLongBits(this.altura) != Double.doubleToLongBits(other.altura)) {
+            return false;
+        }
+        return this.color == other.color;
+    }
+    
 }

@@ -14,6 +14,10 @@ public class CilindroRecto extends Cilindro {
         super(circuloBase, generatriz, color, altura);
     }
 
+    
+    public CilindroRecto() {
+    }
+
     public CilindroRecto(Colores color, double altura) {
         super(color, altura);
     }

@@ -14,6 +14,9 @@ public class CilindroOblicuo extends Cilindro {
         super(circuloBase, generatriz, color, altura);
     }
 
+    public CilindroOblicuo() {
+    }
+
     public CilindroOblicuo(Colores color, double altura) {
         super(color, altura);
     }

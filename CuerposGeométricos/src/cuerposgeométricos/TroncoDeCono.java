@@ -8,7 +8,10 @@ package cuerposgeométricos;
  *
  * @author ikerc
  */
-public class TroncoDeCono {
+public class TroncoDeCono extends CuerpoGeometrico {
     private Circulo circuloMenor;
+
+    public TroncoDeCono() {
+    }
     
 }

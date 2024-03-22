@@ -14,6 +14,9 @@ public class Cono extends CuerpoGeometricoCircular {
         super(circuloBase, generatriz, color, altura);
     }
 
+    public Cono() {
+    }
+
     public Cono(Colores color, double altura) {
         super(color, altura);
     }

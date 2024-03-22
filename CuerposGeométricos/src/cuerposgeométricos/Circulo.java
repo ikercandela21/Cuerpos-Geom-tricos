@@ -8,7 +8,7 @@ package cuerposgeométricos;
  *
  * @author ikerc
  */
-public class Circulo {
+public class Circulo extends CuerpoGeometricoCircular {
 
     private Circulo radio;
 

@@ -4,7 +4,7 @@
  */
 package cuerposgeométricos;
 
-import static cuerposgeométricos.CuerposGeométricos.sc;
+import static cuerposgeométricos.Principal.sc;
 import java.util.Scanner;
 
 /**
