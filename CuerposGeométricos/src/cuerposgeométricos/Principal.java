@@ -16,7 +16,12 @@ public class Principal {
 
     public static void main(String[] args) {
         Menu menu = new Menu();
-        int opcion = menu.getOpcion();
+        int opcion;
+        menu.mostrar();
+        do {
+            opcion = menu.leer();
+        } while (opcion != 0);
+
         switch (opcion) {
             case 1 ->
                 crearObjeto();
@@ -24,9 +29,10 @@ public class Principal {
                 mostrarTodos();
             case 3 ->
                 mostrarPrismas();
-//            case 4 ->
-//                
-//            case 0 ->
+            case 4 ->
+                mostrarCirculares();
+            case 0 ->
+                System.out.println("Fin programa");
         }
     }
 
@@ -34,7 +40,8 @@ public class Principal {
         CuerpoGeometrico cg = null;
         Menu m = new Menu();
         int opcion;
-        opcion = m.creacionPrismas();
+        m.creacionPrismas();
+        opcion = m.leer();
         switch (opcion) {
             case 1 ->
                 cg = new PrismaRegularTriangular();
@@ -61,10 +68,12 @@ public class Principal {
 
     public static void mostrarTodos() {
         Collections.sort(array); //comparar por colores por que en la clase curpo geometrico lo hemos modificado
-        System.out.println(array);
+        for (int i = 0; i < array.size(); i++) {
+            System.out.println(array);
+        }
 
 //        Comparar por altura
-        
+//
 //        Collections.sort(array, new Comparator<CuerpoGeometrico>() {
 //            @Override
 //            public int compare(CuerpoGeometrico o1, CuerpoGeometrico o2) {
@@ -72,7 +81,26 @@ public class Principal {
 //            }
 //        });
     }
-    public static void mostrarPrismas(){
-        if(array.contains())
+
+    public static void mostrarPrismas() {
+        CuerpoGeometrico cuerpo = new PrismaRegularTriangular();
+        double o;
+//        Collections.sort(array,Comparator(array, cuerpo.getArea()));     //revisar linea, queda modificar Comparator.comparingDouble(array::getAreaBase) por que no se que hace.
+        for (CuerpoGeometrico s : array) {
+            if (s instanceof PrismaRegularTriangular) {
+                System.out.println(s);
+            }
+        }
+    }
+
+    public static void mostrarCirculares() {
+        CuerpoGeometrico cuerpo = new Circulo();
+        double o;
+//        Collections.sort(array,Comparator(array, cuerpo.getArea()));     //revisar linea, queda modificar Comparator.comparingDouble(array::getAreaBase) por que no se que hace.
+        for (CuerpoGeometrico s : array) {
+            if (s instanceof CuerpoGeometricoCircular) {
+                System.out.println(s);
+            }
+        }
     }
 }

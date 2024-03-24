@@ -7,10 +7,11 @@ package cuerposgeométricos;
 import java.util.Objects;
 import java.util.Scanner;
 
-public abstract class CuerpoGeometrico implements Comparable <CuerpoGeometrico>{
+public abstract class CuerpoGeometrico implements Comparable<CuerpoGeometrico> {
 
     private Colores color;
     private double altura;
+    private double area;
     static Scanner sc = new Scanner(System.in);
 
     public CuerpoGeometrico(Colores color, double altura) {
@@ -35,6 +36,14 @@ public abstract class CuerpoGeometrico implements Comparable <CuerpoGeometrico>{
 
     public void setAltura(double altura) {
         this.altura = altura;
+    }
+
+    public void getArea(double area) {
+        this.area = area;
+    }
+
+    public void setArea(double area) {
+        this.area = area;
     }
 
     public void leerValores() {
@@ -79,5 +88,5 @@ public abstract class CuerpoGeometrico implements Comparable <CuerpoGeometrico>{
         }
         return this.color == other.color;
     }
-    
+
 }

@@ -23,7 +23,7 @@ public class Menu {
         System.out.println(" 0. FIN");
     }
 
-    public int creacionPrismas() {
+    public void creacionPrismas() {
         System.out.println("Que clase es el cuerpo geometrico");
         System.out.println("Opcion 1 -> Prisma Regular Triangualr"
                 + "Opcion 2 -> Prisma Regular Cuadrangular"
@@ -35,7 +35,6 @@ public class Menu {
                 + "Opcion 8 -> Cilindro Oblicuo"
                 + "Opcion 9 -> Cono"
                 + "Opcion 10 -> Tronco de Cono");
-        int opcion = sc.nextInt();
     }
 
     public int leer() {
